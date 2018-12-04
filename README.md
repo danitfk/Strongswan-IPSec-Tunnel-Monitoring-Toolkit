@@ -49,7 +49,7 @@ UserParameter=systemd,bash /etc/zabbix/scripts/strongswan-monitor-toolkit.sh sys
 ```
 - Keep in mind to add Zabbix user in sudoers for ipsec and systemd command like this (/etc/sudoers):
 
-`zabbix  ALL=(ALL) NOPASSWD:/usr/sbin/ipsec,NOPASSWD:/bin/systemd`
+`zabbix  ALL=(ALL) NOPASSWD:/usr/sbin/ipsec,NOPASSWD:/bin/systemctl`
 
 - Increase Zabbix-Agent timeout to 30 seconds. (/etc/zabbix/zabbix_agentd.conf)
 
