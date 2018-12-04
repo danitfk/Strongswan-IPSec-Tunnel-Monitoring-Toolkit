@@ -40,13 +40,17 @@ zabbix@StrongSwan1:/etc/zabbix/scripts$ ./strongswan-monitor-toolkit.sh systemd
 # Example Zabbix parameter:
 
 ```
-UserParameter=count_all_tunnels,bash /etc/zabbix/strongswan-monitor-toolkit.sh count_all_tunnels
-UserParameter=packetloss_afranet,bash /etc/zabbix/strongswan-monitor-toolkit.sh packetloss to-afranet
-UserParameter=packetloss_mobinnet,bash /etc/zabbix/strongswan-monitor-toolkit.sh packetloss to-Mobinnet
-UserParameter=systemd,bash /etc/zabbix/strongswan-monitor-toolkit.sh systemd
+UserParameter=count_all_tunnels,bash /etc/zabbix/scripts/strongswan-monitor-toolkit.sh count_all_tunnels
+UserParameter=packetloss_afranet,bash /etc/zabbix/scripts/strongswan-monitor-toolkit.sh packetloss to-afranet
+UserParameter=packetloss_mobinnet,bash /etc/zabbix/scripts/strongswan-monitor-toolkit.sh packetloss to-Mobinnet
+UserParameter=rtt_afranet,bash /etc/zabbix/scripts/strongswan-monitor-toolkit.sh rtt to-afranet
+UserParameter=rtt_mobinnet,bash /etc/zabbix/scripts/strongswan-monitor-toolkit.sh rtt to-Mobinnet
+UserParameter=systemd,bash /etc/zabbix/scripts/strongswan-monitor-toolkit.sh systemd
 ```
 
 # Example Zabbix Graph:
-
-![alt Ansible playbook install zabbix agent on linux server](https://github.com/danitfk/Strongswan-IPSec-Tunnel-Monitoring-Toolkit/blob/master/graph.png?raw=true)
+- Packetloss to certain tunnel
+![alt Monitor Strongswan ipsec tunnel in Zabbix](https://github.com/danitfk/Strongswan-IPSec-Tunnel-Monitoring-Toolkit/blob/master/graph.png?raw=true)
+- RTT to certain tunnel
+![alt Monitor Strongswan ipsec tunnel in Zabbix](https://github.com/danitfk/Strongswan-IPSec-Tunnel-Monitoring-Toolkit/blob/master/graph2.png?raw=true)
 
