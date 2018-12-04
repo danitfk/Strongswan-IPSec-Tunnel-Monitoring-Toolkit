@@ -52,6 +52,7 @@ UserParameter=systemd,bash /etc/zabbix/scripts/strongswan-monitor-toolkit.sh sys
 `zabbix  ALL=(ALL) NOPASSWD:/usr/sbin/ipsec,NOPASSWD:/bin/systemd`
 
 - Increase Zabbix-Agent timeout to 30 seconds. (/etc/zabbix/zabbix_agentd.conf)
+
 `Timeout=30`
 
 
