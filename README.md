@@ -46,5 +46,7 @@ UserParameter=packetloss_mobinnet,bash /etc/zabbix/strongswan-monitor-toolkit.sh
 UserParameter=systemd,bash /etc/zabbix/strongswan-monitor-toolkit.sh systemd
 ```
 
+# Example Zabbix Graph:
 
+![alt Ansible playbook install zabbix agent on linux server](https://github.com/danitfk/Strongswan-IPSec-Tunnel-Monitoring-Toolkit/blob/master/graph.png?raw=true)
 
