@@ -47,10 +47,12 @@ UserParameter=rtt_afranet,bash /etc/zabbix/scripts/strongswan-monitor-toolkit.sh
 UserParameter=rtt_mobinnet,bash /etc/zabbix/scripts/strongswan-monitor-toolkit.sh rtt to-Mobinnet
 UserParameter=systemd,bash /etc/zabbix/scripts/strongswan-monitor-toolkit.sh systemd
 ```
-- Keep in mind to add Zabbix user in sudoers for ipsec and systemd command like this:
+- Keep in mind to add Zabbix user in sudoers for ipsec and systemd command like this (/etc/sudoers):
 
 `zabbix  ALL=(ALL) NOPASSWD:/usr/sbin/ipsec,NOPASSWD:/bin/systemd`
 
+- Increase Zabbix-Agent timeout to 30 seconds. (/etc/zabbix/zabbix_agentd.conf)
+`Timeout=30`
 
 
 # Example Zabbix Graph:
