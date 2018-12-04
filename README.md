@@ -52,5 +52,5 @@ UserParameter=systemd,bash /etc/zabbix/scripts/strongswan-monitor-toolkit.sh sys
 - Packetloss to certain tunnel
 ![alt Monitor Strongswan ipsec tunnel in Zabbix](https://github.com/danitfk/Strongswan-IPSec-Tunnel-Monitoring-Toolkit/blob/master/graph.png?raw=true)
 - RTT to certain tunnel
-![alt Monitor Strongswan ipsec tunnel in Zabbix](https://github.com/danitfk/Strongswan-IPSec-Tunnel-Monitoring-Toolkit/blob/master/graph2.png?raw=true)
+![alt Monitor Strongswan ipsec tunnel in Zabbix](https://github.com/danitfk/Strongswan-IPSec-Tunnel-Monitoring-Toolkit/blob/master/graph2.jpg?raw=true)
 
